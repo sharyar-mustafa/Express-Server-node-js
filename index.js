@@ -20,6 +20,11 @@ app.get('/contact', (req,res) =>{
   res.send ('Contact!')
 })
 
+app.get ('/student/:id/:calss',(req,res) =>{
+  res.send ('Student!')
+  console.log(req.params.id + ' ' + req.params.class)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 }) 
